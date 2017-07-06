@@ -77,7 +77,11 @@ console.log(avg(10, 12, 17));
 // 6.
 // Write a function called `getLength` that takes one parameter (a string) and returns the length
 // Then, write and example of using the function.
-
+function getLength (string) {
+  return string.length;
+}
+console.log(getLength('abcdefg')); // should return 7
+console.log(getLength("The quick brown fox jumped over the lazy dogs."));
 
 
 // 7.
@@ -85,7 +89,16 @@ console.log(avg(10, 12, 17));
 // and returns `true` if the second parameter is greater than the first.
 // Otherwise the function should return `false`.
 // Then, write and example of using the function.
+function greaterThan (num1, num2) {
+  if (num2 > num1) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
+console.log(greaterThan(13,27));
+console.log(greaterThan(27,13));
 
 
 // 8.
@@ -94,8 +107,10 @@ console.log(avg(10, 12, 17));
 // is formated like "Hello, Name!" where *Name*
 // is the parameter that was passed in.
 // Then, write and example of using the function.
-
-
+function greet (name) {
+  return ("Hello, " + name + "!");
+}
+console.log(greet("Jeremy")); // should log "Hello, Jeremy!"
 
 // 9.
 // Write a function called `madlib` that takes 4 or more parameters (words).
