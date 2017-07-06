@@ -120,3 +120,11 @@ console.log(greet("Jeremy")); // should log "Hello, Jeremy!"
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
 // Then, write and example of using the function.
+
+function madlib (adj1, adj2, noun1, adj3, noun2) {
+  return ("The " + adj1 + " " + adj2 + " " + noun1 + " jumped over the " + adj3 + " " + noun2 +".");
+}
+
+console.log(madlib('quick', 'brown', 'fox', 'lazy', 'dogs'));
+console.log(madlib('stupid', 'angry', 'bastard', 'sleeping', 'hobos'));
+console.log(madlib('messed-up', 'flying', 'monkey', 'prancing', 'dancer'));
