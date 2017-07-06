@@ -2,18 +2,38 @@
 // Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in JavaScript.
 // Then, write and example of using the function.
 
-function max(){
+function max(num1, num2){
     // Your answer here
+    if (num1 > num2) {
+      return num1;
+    } else {
+      return num2;
+    }
 }
-
+console.log(max(3,2));
 
 // 2.
 // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
 // Then, write and example of using the function.
 
-function maxOfThree(){
+function maxOfThree(num1, num2, num3){
     // Your answer here
+    if (num1 > num2) {  // num1 > num2
+        if (num1 > num3) { //num1 > num2, num1 > num3
+          return num1;
+        } else { //  num3 > num1 > num2
+          return num3;
+        }
+    } else { // num2 > num1
+      if (num2 > num3) { // num2 > num1, num2 > num3
+        return num2;
+      } else { // num3 > num2 > num1
+        return num3;
+      }
+    }
 }
+
+console.log(maxOfThree(14, 10, 22));
 
 
 // 3.
@@ -22,8 +42,21 @@ function maxOfThree(){
 
 function isVowel(char){
     // Your answer here
+    if ((char === 'a') || (char === 'e') || (char === 'i') || (char === 'o') || (char === 'u')) {
+      return true;
+    } else {
+      return false;
+    }
 }
+console.log(isVowel('a'));
+console.log(isVowel('e'));
+console.log(isVowel('i'));
+console.log(isVowel('o'));
+console.log(isVowel('u'));
 
+console.log(isVowel('b'));
+console.log(isVowel('c'));
+console.log(isVowel('d'));
 
 // 4.
 // Write a function called `sum` that takes two parameters and returns the sum of those 2 numbers.
