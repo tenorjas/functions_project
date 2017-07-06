@@ -61,14 +61,18 @@ console.log(isVowel('d'));
 // 4.
 // Write a function called `sum` that takes two parameters and returns the sum of those 2 numbers.
 // Then, write and example of using the function.
-
-
+function sum (num1, num2) {
+  return num1 + num2;
+}
+console.log(sum(3,4));  // 3 + 4 = 7
 
 // 5.
 // Write a function named `avg` that takes 3 parameters and returns the average of those 3 numbers.
 // Then, write and example of using the function.
-
-
+function avg (num1, num2, num3) {
+  return (num1 + num2 + num3) / 3;
+}
+console.log(avg(10, 12, 17));
 
 // 6.
 // Write a function called `getLength` that takes one parameter (a string) and returns the length
